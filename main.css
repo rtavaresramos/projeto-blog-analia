@@ -99,7 +99,7 @@
 h2 span {
     font-weight: bolder;
 }
-
+/* A partir daqui começa o segundo scroll */
 #scroll-2 {
     
     height: 545px;
@@ -120,8 +120,44 @@ article {
     margin-bottom: 130px;
 }
 
-@media (max-width: 1024px) { 
+#expand-menu{
+    display: none;
+}
+@media (max-width: 500px) { 
 
+   
+#menu-principal ul li {
+    display: flex;
+    
+  }
+
+#expand-menu{
+        position: absolute;
+        top: 10px;
+    }
+#home {
+        position: absolute;
+        left: 90px;
+        top: 20px;
+    }
+    
+#aux-1 {
+    
+    position: absolute;
+    display: none;
+    background: #000;
+    padding: 19.5px;
+    top: 64px;
+    margin-right: -10px;
+    margin-left: -10px;
+    
+    
+}
+#expand-menu:active>#aux-1{
+    display: block;
+    
+}
+    }
 #div-busca input {
     position: absolute;
     right: 75px;
@@ -130,7 +166,7 @@ article {
     opacity: 0.8;
     border:solid 1px;
     border-radius:8px;
-    width:190px;
+    width:120px;
     height: 25px
     
 }
@@ -141,18 +177,30 @@ article {
     top: 13px;
     opacity: 0.7;
 }
-#aux-1 {
-    position: absolute;
-    top: 25px;
-    margin-left: 310px;
-}
+
     
+
+
+#img-banner-1 {
+    width: 102%;
+    height: auto;
+    margin-top: 60px;
+    margin-left: -10px;
+    
+}
+#div-banner-1{
+    background: #000;
+    width: 142%;
+    height: auto;
+    margin:-10px;
+    margin-bottom: -;
+   
+}
+
 #txt-banner-1 {
-    position: absolute;
-    color: #fff;
-    top: 55px;
+    font-size: 130%;
+    width: 400px;
     left: 20px;
-    font-size: 280%;
     font-family: 'Old Standard TT';
     
     
@@ -160,18 +208,26 @@ article {
 
 #txt-banner-2{
     position: absolute;
-    top: 380px;
+    top: 230px;
+    width: 350px;
     color: #fff;
-    margin-left: 210px;
-    margin-bottom: 10px;
-    font-size: 280%;
+    margin-left: 70px;
+    margin-bottom: 5px;
+    font-size: 130%;
     font-family: 'Old Standard TT';
     
 }
+
+h2 span {
+    font-weight: bolder;
+}  
+
     #scroll-2 h1{
     margin-top: 15px;
     margin-left: 20px;
     margin-bottom: 10px;
-    font-size: 140%;
-
+    font-size: 100%;
+    width: 400px;
+}
+    
 }
