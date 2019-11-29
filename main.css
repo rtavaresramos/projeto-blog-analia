@@ -120,9 +120,7 @@ article {
     margin-bottom: 130px;
 }
 
-#expand-menu{
-    display: none;
-}
+
 @media (max-width: 500px) { 
 
    
@@ -157,7 +155,7 @@ article {
     display: block;
     
 }
-    }
+    
 #div-busca input {
     position: absolute;
     right: 75px;
