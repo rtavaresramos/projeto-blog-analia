@@ -105,6 +105,7 @@ h2 span {
     height: 545px;
     background-image: url(imgs/bg-scroll-2.png);
     background-size: contain;
+    font-size: 190%
     
 }
 
@@ -119,7 +120,7 @@ article {
     margin-bottom: 130px;
 }
 
-@media (min-width: 700px) { 
+@media (max-width: 1024px) { 
 
 #div-busca input {
     position: absolute;
@@ -171,6 +172,6 @@ article {
     margin-top: 15px;
     margin-left: 20px;
     margin-bottom: 10px;
-    font-size: 290%;
+    font-size: 140%;
 
 }
