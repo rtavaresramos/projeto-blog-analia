@@ -118,3 +118,59 @@ article {
     margin-left: 30px;
     margin-bottom: 130px;
 }
+
+@media (min-width: 700px) { 
+
+#div-busca input {
+    position: absolute;
+    right: 75px;
+    top: 17px;
+    background-color:#fff;
+    opacity: 0.8;
+    border:solid 1px;
+    border-radius:8px;
+    width:190px;
+    height: 25px
+    
+}
+
+#div-busca img {
+    position: absolute;
+    right: 30px;
+    top: 13px;
+    opacity: 0.7;
+}
+#aux-1 {
+    position: absolute;
+    top: 25px;
+    margin-left: 310px;
+}
+    
+#txt-banner-1 {
+    position: absolute;
+    color: #fff;
+    top: 55px;
+    left: 20px;
+    font-size: 280%;
+    font-family: 'Old Standard TT';
+    
+    
+}
+
+#txt-banner-2{
+    position: absolute;
+    top: 380px;
+    color: #fff;
+    margin-left: 210px;
+    margin-bottom: 10px;
+    font-size: 280%;
+    font-family: 'Old Standard TT';
+    
+}
+    #scroll-2 h1{
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 290%;
+
+}
