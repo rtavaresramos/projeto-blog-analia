@@ -1,7 +1,10 @@
 /* Esse trecho de código faz referência a Barra de Menu do Blog */
 
+body{
+    max-width: 1324px;
+    
+}
 #menu-principal {
-    position: absolute;
     position: fixed;
 }
 #menu-principal ul {
@@ -12,7 +15,8 @@
     margin: -10px;
     left: 0px;
     right: 0px;
-    display: block;
+    display: flex;
+    flex-direction: row;
     height: 25px;
     list-style: none;
 }
@@ -23,11 +27,11 @@
 
 #menu-principal ul li a {
     padding: 2px 10px;
+    width: 100%;
     background-color: #000;
     color: #fff;
     text-decoration: none;
-    border-bottom: 3px ;
-}
+    }
 #div-busca input {
     position: absolute;
     right: 65px;
@@ -50,36 +54,53 @@
 
 
 #aux-1 {
-    position: absolute;
-    top: 20px;
-    margin-left: 600px;
+    position: relative;
+    top: 0px;
+    margin-left: auto;
+    margin-right: 250px;
+    font-size: auto;
 }
 
 
 /* Esse trecho de código faz referência ao Banner da parte inicial da página */
 
-#img-banner-1 {
-    width: 100%;
-    height: auto;
-    margin-top: -14px;
+
+
+section.sec-banner {
+    display: flex;
+    margin-top: -50px;
     margin-left: -10px;
+    margin-right: -10px;
+    
+    }
+
+#img-banner-1 {
+    max-width: 1265px;
+    width: 200%;
+    height: auto;
+    opacity: 0.25;
     
 }
-#div-banner-1{
+
+section.sec-banner div {
+    max-width: 1345px;
+    width: 100%;
+    z-index: 1;
     background: #000;
-    width: auto;
-    height: auto;
-    margin:-10px;
-    margin-bottom: -;
-   
 }
+   
+   
 
 #txt-banner-1 {
     position: absolute;
+    z-index: 2;
     color: #fff;
-    top: 55px;
-    left: 50px;
-    font-size: 300%;
+    max-width: 1324px;
+    width: 100%;
+    height: auto;
+    top: 50px;
+    left: 10px;
+    font-size: 350%;
     font-family: 'Old Standard TT';
     
     
@@ -87,11 +108,15 @@
 
 #txt-banner-2{
     position: absolute;
-    top: 500px;
+    z-index: 2;
     color: #fff;
-    margin-left: 420px;
-    margin-bottom: 10px;
-    font-size: 300%;
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    top: 470px;
+    right: 10px;
+    
+    font-size: 350%;
     font-family: 'Old Standard TT';
     
 }
@@ -117,25 +142,81 @@ h2 span {
 }
 article {
     margin-left: 30px;
-    margin-bottom: 130px;
+    padding-bottom: 500px
+}
+
+#expand-menu {
+    opacity: 0;
+}
+/* Utilizando Flexbox pra deixar responsivo */
+
+
+/* Declarando a classe como uma linha flex */
+
+.column-nowrap {
+	flex-flow: row wrap;
+}
+
+/* Criando o estilo do flex container */
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	
+}
+
+/* Flex Item */
+.item {
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+	flex: 1;
+	margin: 15px;
+    text-align: center;
+	font-size: 1.5em;
+    background: #000;
+    width: 10px; 
+}
+div.item img {
+    max-width: 1300px;
+    width: 90%;
+    margin-top: 10px;
+    height: auto;
+    border: solid ; 
+    }
+
+div.item p {
+    position: absolute;
+    max-width: 300px;
+    width: 20%;
+    height: auto;
+    margin: 25px;
+    margin-bottom: 40px;
+    opacity: 0;
+    }
+
+
+div.item img:hover {
+    opacity: 0.25;
 }
 
 
-@media (max-width: 400px) { 
+@media (max-width: 800px) { 
 
    
 #menu-principal ul li {
     display: flex;
     
+    
   }
 
 #expand-menu{
         position: absolute;
-        top: 10px;
+        top: 20px;
+        opacity: 1;
     }
 #home {
         position: absolute;
-        left: 90px;
+        left: 50px;
         top: 20px;
     }
     
@@ -143,18 +224,18 @@ article {
     
     position: absolute;
     display: none;
+    flex-direction: column;
     background: #000;
-    padding: 19.5px;
+    padding-bottom: 19.5px;
     top: 64px;
     margin-right: -10px;
     margin-left: -10px;
-    
-    
+    padding-left: 185px;
+    padding-right: 185px;
+   
 }
-#expand-menu:active>#aux-1{
-    display: block;
-    
-}
+        
+
     
 #div-busca input {
     position: absolute;
@@ -180,6 +261,7 @@ article {
 
 
 #img-banner-1 {
+    max-width: 800px;
     width: 102%;
     height: auto;
     margin-top: 60px;
@@ -191,7 +273,7 @@ article {
     width: 142%;
     height: auto;
     margin:-10px;
-    margin-bottom: -;
+    
    
 }
 
