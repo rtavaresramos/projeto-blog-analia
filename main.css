@@ -172,33 +172,63 @@ article {
 	flex: 1;
 	margin: 15px;
     text-align: center;
-	font-size: 1.5em;
+	font-size: 1.2em;
     background: #000;
     width: 10px; 
 }
 div.item img {
     max-width: 1300px;
-    width: 90%;
-    margin-top: 10px;
+    width: 95%;
+    margin-top: 5px;
     height: auto;
     border: solid ; 
     }
 
+
+/* Aqui usei um conceito que aprendi na video aula do Curso em Video que foi o BGcolor em rgba 
+
+Link do video: https://www.youtube.com/watch?v=g7d8pbEu3oM&list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o&index=32*/
+
+
 div.item p {
     position: absolute;
     max-width: 300px;
-    width: 20%;
-    height: auto;
-    margin: 25px;
-    margin-bottom: 40px;
+    width: 22%;
+    height: 200px;
+    margin: 0px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-top: 25px;
+    background-color: rgba(0, 0, 0,.7);
     opacity: 0;
+   
     }
 
 
-div.item img:hover {
+.item p:hover {
+    transition: .5s;
+    opacity: 1;
+    
+}
+
+.item img:hover {
+
     opacity: 0.25;
 }
 
+.item span{
+    float: right;
+    border: solid;
+    color: #000;
+    background-color: #fff;
+    margin-top: 80px;
+    padding: 5px;
+    
+    
+    
+    
+    
+}
 
 @media (max-width: 800px) { 
 
