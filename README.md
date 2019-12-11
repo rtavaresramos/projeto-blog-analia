@@ -9,4 +9,4 @@ As a first project what I put here in Github, I tried to bring just concepts abo
 The nexts steps by this project will be use a bit from js to get him more dinamismus. As soon as I can have free time to get this done It'll happens.
 
 
-Until now, I'm coding the home page and after this I'll go ahead with the other pages.
+For now, I'm coding the home page and after this I'll go ahead with the other pages.
